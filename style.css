@@ -1,37 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 :root {
   --main-font: "Roboto", sans-serif;
   --line-height: 1.5;
-  --font-weight: 400;
-
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --color-primary: #e5d7c5;
+  --color-secundary: #4d392c;
 }
 
 body {
@@ -41,6 +20,213 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: var(--main-font);
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 2rem;
+  background: rgb(227, 212, 193);
+  background: linear-gradient(
+    0deg,
+    rgba(227, 212, 193, 1) 0%,
+    rgba(227, 212, 193, 0.9023984593837535) 100%
+  );
+}
+.img-logo {
+  width: 100px;
+
+  cursor: pointer;
 }
 
+.nav ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #4d392c;
+  font-size: 25px;
+  padding: 8px;
+}
+.nav ul li a:hover {
+  background-color: #fff;
+  color: #4d392c;
+  padding: 8px;
+  border-radius: 10px;
+}
 
+.header {
+  background-image: url("./public/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/********* Products **********/
+.slogan {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+}
+.container {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.col {
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.img-product {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.description a {
+  width: inherit;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.description a:hover {
+  background-color: black;
+  color: var(--color-primary);
+}
+.img-product img {
+  height: 320px;
+}
+
+/* *********** VIDEO *************** */
+
+.video {
+  width: 100%;
+  height: 100%;
+  margin: 0
+
+}
+.video video {
+  width: 100%;
+  height: 100%;
+}
+
+/********** PASAFOTOS **********/
+.container-slider {
+  width: 100%;
+  height: 650px;
+  /* overflow: hidden;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+ul.slider li {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.5s;
+}
+
+ul.slider li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1;
+}
+ul.slider li:target {
+  opacity: 1;
+}
+
+.menu {
+  position: relative;
+  text-align: center;
+  margin: 1em;
+  bottom: 6em;
+}
+.menu li {
+  display: inline-block;
+  text-align: inherit;
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.menu li a {
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
+  padding: 1em 1em;
+  border-radius: 50%;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: var(--color-secundary);
+  color: var(--color-primary);
+}
+
+.history {
+  width: 100%;
+  height: 500px;
+  background-image: url("./public/img/fondo-history.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.history p {
+  width: 50%;
+  color: white;
+  font-size: 15px;
+  padding: 4rem 0 0 4rem;
+}
+.history img {
+  width: 100px;
+  height: 100px;
+  margin: 4rem 0 0 4rem;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
