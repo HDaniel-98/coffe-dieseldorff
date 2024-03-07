@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--------------------- CSS ---------------------------------->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!----------------------- font-awesome ------------------------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Coffe</title>
-  </head>
-  <body>
+  <!--------------------- CSS ---------------------------------->
+  <link rel="stylesheet" href="style.css" />
 
+  <!----------------------- font-awesome ------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <title>Coffe</title>
+</head>
+
+<body>
   <!-- ------------------- NAV ---------------------- -->
 
-    <nav class="nav">
-      <div class="logo">
-        <img class="img-logo" src="./public/img/Dieseldorff-Logo-Blanco.png" alt="logo">
-      </div>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
-        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-      </ul>
-    </nav>
-    <header class="header"></header>
+  <nav class="nav">
+    <div class="logo">
+      <img class="img-logo" src="./public/img/Dieseldorff-Logo-Blanco.png" alt="logo" />
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Shop</a></li>
+      <li><a href="">Contact</a></li>
+      <li>
+        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-user"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <header class="header"></header>
 
   <!-- ------------------- PRODUCTS ---------------------- -->
 
   <section class="slogan">
     <div class="container">
-      <div class="col">
+      <div class="col-product">
         <div class="img-product">
-          <img src="./public/img/legendary-768x768.webp" alt="">
+          <img src="./public/img/legendary-768x768.webp" alt="" />
         </div>
         <div class="description"><a href="#">LEGENDARY BLEND</a></div>
       </div>
-      <div class="col">
+      <div class="col-product">
         <div class="img-product">
-          <img src="./public/img/subscriptions-768x768.webp" alt="">
+          <img src="./public/img/subscriptions-768x768.webp" alt="" />
         </div>
         <div class="description"><a href="#">MORE COFFEES</a></div>
       </div>
-      <div class="col">
+      <div class="col-product">
         <div class="img-product">
-          <img src="./public/img/exclusive-768x768.webp" alt="">
+          <img src="./public/img/exclusive-768x768.webp" alt="" />
         </div>
         <div class="description"><a href="#">EXCLUSIVE BLEND</a></div>
       </div>
     </div>
-
   </section>
 
   <!-- ------------------- VIDEO ------------------------>
@@ -63,41 +75,114 @@
     <video autoplay loop muted src="./public/img/videocoffe.mp4"></video>
   </div>
 
+  <!------------------------ PASAFOTOS --------------->
+  <section class="cafe-section">
+    <h2 class="line-title">Collection</h2>
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(./public/img/coban-tradicional-01-600x600.png);">
+        <div class="item-desc">
+          <h3>Cobán Tradicional</h3>
+          <p>A medium roasted coffee, well-balanced and sourced from the cloud forests of the Coban region in Guatemala.
+            Cupping notes include: friendly, lightly citric, and sweetly balanced with a medium body.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./public/img/atitlan-honey-01-600x600.jpg);">
+        <div class="item-desc">
+          <h3>Atitlán Honey
+          </h3>
+          <p>Buying this coffee helps preserve and protect forests that are habitats for numerous endangered birds and
+            wildlife. Ideal for specialty coffee lovers seeking a natural process with a mild, prominent natural flavor,
+            lasting aftertaste, and creamy body.
+            Tasting notes include artisanal chocolate walnut and pomegranate. walnut and pomegranate.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./public/img/full-roast-blend-01-600x600.jpg);">
+        <div class="item-desc">
+          <h3>Full Roast</h3>
+          <p>Our medium-dark roast is made by combining beans from the Cobán region, appealing to those who enjoy strong
+            coffee with balanced flavors, body, and sweetness.
+            Cupping reveals notes of dark chocolate, caramel, and a touch of cinnamon spice.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./public/img/exclusive-blend-coffee-01-600x600.jpg);">
+        <div class="item-desc">
+          <h3>Exclusive Blend
+          </h3>
+          <p>Our most loved blend! Exceptionally well-balanced and sweet. Made with only the finest coffee beans from
+            the elevated cloud forests of Cobán.
 
-  
-    <!------------------------ PASAFOTOS --------------->
+            Tasting notes: dark chocolate, brown sugar, and citrus fruit.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./public/img/antigua-natural-01.jpg);">
+        <div class="item-desc">
+          <h3>Antigua Natural
+          </h3>
+          <p>Ideal for those who appreciate specialty coffee and prefer a mild, clearly noticeable natural flavor with a
+            long-lasting aftertaste and creamy texture.
+            Cupping Notes: Handcrafted chocolatey walnut and pomegranate.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./public/img/organic-01-600x600.jpg);">
+        <div class="item-desc">
+          <h3>Organic</h3>
+          <p>Our inaugural organic harvest! A great coffee to enjoy with friends and family. Perfect for those who
+            appreciate specialty coffee made through organic methods.
 
-    <div class="container-slider">
-      <ul class="slider">
-        <li id="slide1">
-          <img src="https://images.pexels.com/photos/1233534/pexels-photo-1233534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fotocafe">
-        </li>
-        <li id="slide2">
-          <img src="https://images.pexels.com/photos/3551722/pexels-photo-3551722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fotocafe">
-        </li >
-        <li id="slide3">
-          <img src="https://images.pexels.com/photos/3734026/pexels-photo-3734026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fotocafe">
-        </li>
-        <li id="slide4">
-          <img src="https://images.pexels.com/photos/1084071/pexels-photo-1084071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fotocafe">
-        </li>
-      </ul>
+            Tasting Notes: Well-structured cup with good body and sweetness. It has a very pleasant fragrance with hints
+            of fruit like orange, caramel, and peach.</p>
+        </div>
+      </div>
     </div>
-    <ul class="menu">
-      <li><a href="#slide1"><i class="fa-solid fa-mug-saucer"></i></a></li>
-      <li><a href="#slide2"><i class="fa-solid fa-mug-saucer"></i></a></li>
-      <li><a href="#slide3"><i class="fa-solid fa-mug-saucer"></i></a></li>
-      <li><a href="#slide4"><i class="fa-solid fa-mug-saucer"></i></a></li>
-    </ul>
-      <!-- ------------------- HISTORIA ---------------------- -->
+    </div>
+  </section>
 
-    <section class="history">
-      <p>Since 1888 it has been our mission to deliver the best coffees; carefully selected and craft roasted to perfection with the same passion for quality that founded our company. We are proud to be a 4th generation family owned company with more than 135 years of experience in superior quality coffees.</p>
-      <img src="./public/img/Old-White-Logo-1024x1024.png" alt="logo">
-    </section>
-    <footer class="footer"></footer>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+  <!------------------------ MAPA --------------->
+
+  <section class="section-mapa">
+    <h2 class="line-title">Guatemala - Cobán</h2>
+    <div class="map">
+      <div class="map1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d682.5867064655613!2d-90.5234374189278!3d14.582343880385347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3e22b2302fd%3A0x6574ea0cf94d6294!2sDieseldorff%20Kaffee!5e0!3m2!1ses-419!2ses!4v1709808285979!5m2!1ses-419!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map2">
+         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.18282722192225!2d-90.38605341571733!3d15.470615689299105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a46c5daceba03%3A0x78ef756d08563db9!2sDieseldorff%20Kaffee!5e0!3m2!1ses-419!2ses!4v1709804062952!5m2!1ses-419!2ses"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------- HISTORIA ---------------------- -->
+
+  <section class="history">
+    <p>
+      Since 1888 it has been our mission to deliver the best coffees;
+      carefully selected and craft roasted to perfection with the same passion
+      for quality that founded our company. We are proud to be a 4th
+      generation family owned company with more than 135 years of experience
+      in superior quality coffees.
+    </p>
+    <img src="./public/img/Old-White-Logo-1024x1024.png" alt="logo" />
+  </section>
+  <footer class="footer">
+    <svg width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+    </svg>
+    <svg width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M16.5 7.5l0 .01" />
+    </svg>
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
 </html>
-
-
