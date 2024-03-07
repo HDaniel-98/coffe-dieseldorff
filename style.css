@@ -86,7 +86,7 @@ body {
   width: 95%;
   height: 95%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   place-items: center;
   gap: 1rem;
 }
@@ -141,7 +141,7 @@ body {
 /********** PASAFOTOS **********/
 .container-slider {
   width: 100%;
-  height: 650px; 
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +180,7 @@ ul.slider li:target {
   position: relative;
   width: 100%;
   text-align: center;
-  padding: 1rem ;
+  padding: 1rem;
   background-color: black;
 }
 .menu li {
@@ -203,7 +203,6 @@ ul.slider li:target {
   background-color: var(--color-secundary);
   color: var(--color-primary);
 }
-
 
 /***************************** SLIDER ****************************/
 
@@ -451,13 +450,12 @@ button {
   }
 }
 
-
 /***************************** MAPA *****************************/
-.section-mapa .line-title{
-  margin-left: 2rem; 
+.section-mapa .line-title {
+  margin-left: 2rem;
   /* width: 100%; */
 }
-.section-mapa{
+.section-mapa {
   background-color: var(--color-primary);
   width: 100%;
   height: 100%;
@@ -465,23 +463,21 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  }
-.map{
+}
+.map {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: 400px;
 }
-.map1{
+.map1 {
   padding: 10px;
-
-} 
-.map2{
-  padding: 10px;
-  
 }
- .map iframe {
+.map2 {
+  padding: 10px;
+}
+.map iframe {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -490,11 +486,10 @@ button {
 .history {
   width: 100%;
   height: 500px;
-  background-image: url("./public/img/fondo-history.webp");
+  background-image: url("./public/img/fondo-history.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: contrast(0.7) brightness(0.8);
 }
 
 .history p {
@@ -513,9 +508,57 @@ button {
   background-color: black;
   width: 100%;
   height: 100px;
-  color: var(--color-primary);
+  color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+ 
+}
+.footer ul li{
+  font-size: 25px;
+  display: inline;
+  padding: 1rem;
+}
+.footer a{
+  color: white;
+}
+
+/***********************RESPONSIVE***********************/
+
+@media screen and (max-width: 390px), (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .nav ul {
+    display: none;
+  }
+  .section-mapa{
+    width: 100%;
+  }
+  .map{
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+  .map1, .map2{
+    width: 100%;
+  }
+  .history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .history p, 
+  .history img{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
 }
